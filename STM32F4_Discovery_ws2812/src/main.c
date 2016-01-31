@@ -6,7 +6,6 @@ void Delay(__IO uint32_t nCount) {
   }
 }
 
-#define d2r (3.14159265/180)
 
 // Use update signal
 // PAP: This is better than the CC1 signal; using the CC1 signal causes the timing to shift
@@ -20,6 +19,7 @@ void Delay(__IO uint32_t nCount) {
 #define TIM_PERIOD			(25)
 #define TIM_COMPARE_LOGIC_1	(14)
 #define TIM_COMPARE_LOGIC_0	(7)
+
 
 
 TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
